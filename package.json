@@ -1,0 +1,12 @@
+{
+  "name": "@KoichiKiyokawa/tools",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "K.Kiyokawa",
+  "license": "MIT",
+  "devDependencies": {
+    "zx": "^4.3.0"
+  }
+}
