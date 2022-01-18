@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  zx: ^4.3.0
+  zx: 4.3.0
 
 devDependencies:
   zx: 4.3.0
