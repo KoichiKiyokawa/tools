@@ -28,12 +28,16 @@ import "zx/globals"
         ]),
       ]
       candidates = updateCandidates(candidates, currentStepHints)
-      console.log("candidates:")
-      console.log(candidates)
-      console.log("recommendations for next the input:")
-      console.log(
-        getNextInputRecommendations(fiveLengthWords, alreadyTypedCharacters)
-      )
+      if (candidates.length === 1) {
+        console.log(chalk.green(`Answer is "${candidates[0]}"`))
+      } else {
+        console.log("candidates:")
+        console.log(candidates)
+        console.log("recommendations for next the input:")
+        console.log(
+          getNextInputRecommendations(fiveLengthWords, alreadyTypedCharacters)
+        )
+      }
     } catch (err) {
       console.log(chalk.red(err.message))
     }
