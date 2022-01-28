@@ -32,7 +32,7 @@ import "zx/globals"
       console.log(candidates)
       console.log("recommendations for next the input:")
       console.log(
-        getNextInputRecommendations(candidates, alreadyTypedCharacters)
+        getNextInputRecommendations(fiveLengthWords, alreadyTypedCharacters)
       )
     } catch (err) {
       console.log(chalk.red(err.message))
@@ -119,20 +119,20 @@ function updateCandidates(
 
 // search for words that using the characters user has not typed.
 function getNextInputRecommendations(
-  currentCandidates: string[],
+  words: string[],
   alreadyTypedCharacters: string[],
   maxLength: number = 3
 ): string[] {
   let topCandidateWithScoreList: { word: string; score: number }[] = []
-  for (const candidate of currentCandidates) {
+  for (const word of words) {
     let score = 0
     for (const char of alreadyTypedCharacters) {
-      if (!candidate.includes(char)) score++
+      if (!word.includes(char)) score++
     }
-    score += 5 - [...new Set(candidate)].length // decrease score if the word has duplicate characters
-    topCandidateWithScoreList.push({ word: candidate, score })
+    score -= 5 - [...new Set(word)].length // decrease score if the word has duplicate characters
+    topCandidateWithScoreList.push({ word, score })
     topCandidateWithScoreList = topCandidateWithScoreList
-      .sort((a, b) => a.score - b.score)
+      .sort((a, b) => b.score - a.score) // sort by desc
       .slice(0, maxLength)
   }
 
