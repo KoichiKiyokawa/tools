@@ -7,3 +7,11 @@
 ```sh
 pnpm zx get-my-external-pr-list/index.mjs
 ```
+
+## ソルバー系
+
+### WORDLE ソルバー
+
+```sh
+pnpm zx wordle/index.ts
+```
