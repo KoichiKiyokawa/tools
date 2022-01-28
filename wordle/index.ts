@@ -121,7 +121,7 @@ function updateCandidates(
 function getNextInputRecommendations(
   words: string[],
   alreadyTypedCharacters: string[],
-  maxLength: number = 3
+  maxLength: number = 10
 ): string[] {
   let topCandidateWithScoreList: { word: string; score: number }[] = []
   for (const word of words) {
