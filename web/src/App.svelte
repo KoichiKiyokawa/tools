@@ -24,12 +24,8 @@
     ...new Set(allStepHints.flat().flatMap((hint) => hint?.character ?? [])),
   ]
 
-  let inputElement: HTMLInputElement
-  let inputing: string = ""
-
   let loading = true
   onMount(() => {
-    inputElement.focus()
     fetchFiveLengthWords()
       .then((words) => {
         fiveLengthWords = words
@@ -42,19 +38,7 @@
       .finally(() => (loading = false))
   })
 
-  $: handleInputChange(inputing)
-
-  function handleInputChange(_inputing: string) {
-    if (_inputing.length > 5) inputing = _inputing.substring(0, 5)
-
-    const newHints = inputing.split("").map((char, i) => ({
-      character: char,
-      index: i,
-      state: currentStepHints?.[i]?.state ?? "absent",
-    }))
-
-    allStepHints = [...allStepHints.slice(0, -1), newHints]
-  }
+  let focusedFlags: boolean[] = [true, ...Array(ROW_COUNT - 1).fill(false)]
 
   function solve() {
     candidates = updateCandidates(candidates, currentStepHints)
@@ -62,19 +46,25 @@
       fiveLengthWords,
       alreadyTypedCharacters
     )
-    allStepHints = [...allStepHints, []]
-    inputing = ""
-    inputElement.focus()
   }
+
+  $: console.log(allStepHints)
 </script>
 
-<form on:submit|preventDefault={solve}>
-  <input bind:this={inputElement} bind:value={inputing} class="" />
-  <button disabled={inputing.length !== 5}>solve</button>
-</form>
+{#each allStepHints as hints, rowIndex}
+  <Row
+    bind:hints
+    focus={focusedFlags[rowIndex]}
+    on:click={() => {
+      if (
+        rowIndex > 0 &&
+        allStepHints[rowIndex - 1].some((hint) => hint === null)
+      )
+        return // return if the previous row is not inputed
 
-{#each allStepHints as hints}
-  <Row bind:hints />
+      focusedFlags = focusedFlags.map((_, i) => i === rowIndex)
+    }}
+  />
 {/each}
 
 {#if loading}
@@ -94,3 +84,9 @@
     {/each}
   </ul>
 {/if}
+
+<style>
+  :global(*) {
+    box-sizing: border-box;
+  }
+</style>
