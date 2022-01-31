@@ -1,14 +1,3 @@
-export async function fetchFiveLengthWords() {
-  const allEnglishWords = await fetch(
-    "https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt"
-  )
-    .then((r) => r.text())
-    .then((r) => r.split("\r\n"))
-
-  const fiveLengthWords = allEnglishWords.filter((word) => word.length === 5)
-  return fiveLengthWords
-}
-
 const STATES = ["absent", "present", "correct"] as const
 export type State = typeof STATES[number]
 
