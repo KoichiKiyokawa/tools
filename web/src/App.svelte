@@ -3,14 +3,13 @@
   import Row from "./components/Row.svelte"
   import { COLUMN_COUNT, ROW_COUNT } from "./constants"
   import {
-    fetchFiveLengthWords,
     getNextInputRecommendations,
     updateCandidates,
     WordleHint,
   } from "./utils"
+  import { fiveLengthWords } from "./dictionary"
 
-  let fiveLengthWords: string[] = []
-  let candidates: string[] = []
+  let candidates: string[] = fiveLengthWords
   let allStepHints: (WordleHint | null)[][] = Array(ROW_COUNT).fill(
     Array(COLUMN_COUNT).fill(null)
   )
@@ -23,20 +22,6 @@
   $: alreadyTypedCharacters = [
     ...new Set(allStepHints.flat().flatMap((hint) => hint?.character ?? [])),
   ]
-
-  let loading = true
-  onMount(() => {
-    fetchFiveLengthWords()
-      .then((words) => {
-        fiveLengthWords = words
-        candidates = words
-      })
-      .catch((err) => {
-        console.error(err)
-        alert("Failed to fetch words")
-      })
-      .finally(() => (loading = false))
-  })
 
   let focusedFlags: boolean[] = [true, ...Array(ROW_COUNT - 1).fill(false)]
 
@@ -67,23 +52,19 @@
   />
 {/each}
 
-{#if loading}
-  <p>Loading...</p>
-{:else}
-  <h2>candidates</h2>
-  <ul>
-    {#each candidates.slice(0, 10) as candidate}
-      <li>{candidate}</li>
-    {/each}
-  </ul>
+<h2>candidates</h2>
+<ul>
+  {#each candidates.slice(0, 10) as candidate}
+    <li>{candidate}</li>
+  {/each}
+</ul>
 
-  <h2>recommendations for the next input</h2>
-  <ul>
-    {#each recommendations as recommendation}
-      <li>{recommendation}</li>
-    {/each}
-  </ul>
-{/if}
+<h2>recommendations for the next input</h2>
+<ul>
+  {#each recommendations as recommendation}
+    <li>{recommendation}</li>
+  {/each}
+</ul>
 
 <style>
   :global(*) {
