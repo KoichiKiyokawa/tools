@@ -7,6 +7,6 @@
   "author": "K.Kiyokawa",
   "license": "MIT",
   "devDependencies": {
-    "zx": "4.3.0"
+    "zx": "5.0.0"
   }
 }

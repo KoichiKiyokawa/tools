@@ -1,10 +1,10 @@
 lockfileVersion: 5.3
 
 specifiers:
-  zx: 4.3.0
+  zx: 5.0.0
 
 devDependencies:
-  zx: 4.3.0
+  zx: 5.0.0
 
 packages:
 
@@ -32,38 +32,22 @@ packages:
   /@types/fs-extra/9.0.13:
     resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
     dependencies:
-      '@types/node': 16.11.20
+      '@types/node': 17.0.16
     dev: true
 
   /@types/minimist/1.2.2:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node-fetch/2.5.12:
-    resolution: {integrity: sha512-MKgC4dlq4kKNa/mYrwpKfzQMB5X3ee5U6fSprkKpToBqBmX4nFZL9cW5jl6sWn+xpRJ7ypWh2yyqqr8UUCstSw==}
+  /@types/node-fetch/3.0.3:
+    resolution: {integrity: sha512-HhggYPH5N+AQe/OmN6fmhKmRRt2XuNJow+R3pQwJxOOF9GuwM7O2mheyGeIrs5MOIeNjDEdgdoyHBOrFeJBR3g==}
+    deprecated: This is a stub types definition. node-fetch provides its own type definitions, so you do not need this installed.
     dependencies:
-      '@types/node': 16.11.20
-      form-data: 3.0.1
+      node-fetch: 3.2.0
     dev: true
 
-  /@types/node/16.11.20:
-    resolution: {integrity: sha512-lAKaZ0Lc1Umwd0AqLr6iy5U8u/1DpK7/JzNgQn9cMMUk2mFR8bbhEP8BQrI9Cm5CU0bOVCaWbkGBvgqKMOJHsw==}
-    dev: true
-
-  /ansi-styles/4.3.0:
-    resolution: {integrity: sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==}
-    engines: {node: '>=8'}
-    dependencies:
-      color-convert: 2.0.1
-    dev: true
-
-  /array-union/3.0.1:
-    resolution: {integrity: sha512-1OvF9IbWwaeiM9VhzYXVQacMibxpXOMYVNIvMtKRyX9SImBXpKcFr8XvFDeEslCyuH/t6KRt7HEO94AlP8Iatw==}
-    engines: {node: '>=12'}
-    dev: true
-
-  /asynckit/0.4.0:
-    resolution: {integrity: sha1-x57Zf380y48robyXkLzDZkdLS3k=}
+  /@types/node/17.0.16:
+    resolution: {integrity: sha512-ydLaGVfQOQ6hI1xK2A5nVh8bl0OGoIfYMxPWHqqYe9bTkWCfqiVvZoh2I/QF2sNSkZzZyROBoTefIEI+PB6iIA==}
     dev: true
 
   /braces/3.0.2:
@@ -73,35 +57,14 @@ packages:
       fill-range: 7.0.1
     dev: true
 
-  /chalk/4.1.2:
-    resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
-    engines: {node: '>=10'}
-    dependencies:
-      ansi-styles: 4.3.0
-      supports-color: 7.2.0
+  /chalk/5.0.0:
+    resolution: {integrity: sha512-/duVOqst+luxCQRKEo4bNxinsOQtMP80ZYm7mMqzuh5PociNL0PvmHFvREJ9ueYL2TxlHjBcmLCdmocx9Vg+IQ==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: true
 
-  /color-convert/2.0.1:
-    resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
-    engines: {node: '>=7.0.0'}
-    dependencies:
-      color-name: 1.1.4
-    dev: true
-
-  /color-name/1.1.4:
-    resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
-    dev: true
-
-  /combined-stream/1.0.8:
-    resolution: {integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==}
-    engines: {node: '>= 0.8'}
-    dependencies:
-      delayed-stream: 1.0.0
-    dev: true
-
-  /delayed-stream/1.0.0:
-    resolution: {integrity: sha1-3zrhmayt+31ECqrgsp4icrJOxhk=}
-    engines: {node: '>=0.4.0'}
+  /data-uri-to-buffer/4.0.0:
+    resolution: {integrity: sha512-Vr3mLBA8qWmcuschSLAOogKgQ/Jwxulv3RNE4FXnYWRGujzrRWQI4m12fQqRkwX06C0KanhLr4hK+GydchZsaA==}
+    engines: {node: '>= 12'}
     dev: true
 
   /dir-glob/3.0.1:
@@ -144,6 +107,14 @@ packages:
       reusify: 1.0.4
     dev: true
 
+  /fetch-blob/3.1.4:
+    resolution: {integrity: sha512-Eq5Xv5+VlSrYWEqKrusxY1C3Hm/hjeAsCGVG3ft7pZahlUAChpGZT/Ms1WmSLnEAisEXszjzu/s+ce6HZB2VHA==}
+    engines: {node: ^12.20 || >= 14.13}
+    dependencies:
+      node-domexception: 1.0.0
+      web-streams-polyfill: 3.2.0
+    dev: true
+
   /fill-range/7.0.1:
     resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==}
     engines: {node: '>=8'}
@@ -151,13 +122,11 @@ packages:
       to-regex-range: 5.0.1
     dev: true
 
-  /form-data/3.0.1:
-    resolution: {integrity: sha512-RHkBKtLWUVwd7SqRIvCZMEvAMoGUp0XU+seQiZejj0COz3RI3hWP4sCv3gZWWLjJTd7rGwcsF5eKZGii0r/hbg==}
-    engines: {node: '>= 6'}
+  /formdata-polyfill/4.0.10:
+    resolution: {integrity: sha512-buewHzMvYL29jdeQTVILecSaZKnt/RJWjoZCF5OW60Z67/GmSLBkOFM7qh1PI3zFNtJbaZL5eQu1vLfazOwj4g==}
+    engines: {node: '>=12.20.0'}
     dependencies:
-      asynckit: 0.4.0
-      combined-stream: 1.0.8
-      mime-types: 2.1.34
+      fetch-blob: 3.1.4
     dev: true
 
   /from/0.1.7:
@@ -180,11 +149,10 @@ packages:
       is-glob: 4.0.3
     dev: true
 
-  /globby/12.2.0:
-    resolution: {integrity: sha512-wiSuFQLZ+urS9x2gGPl1H5drc5twabmm4m2gTR27XDFyjUHJUNsS8o/2aKyIF6IoBaR630atdher0XJ5g6OMmA==}
+  /globby/13.1.1:
+    resolution: {integrity: sha512-XMzoDZbGZ37tufiv7g0N4F/zp3zkwdFtVbV3EHsVl1KQr4RPLfNoT068/97RPshz2J5xYNEjLKKBKaGHifBd3Q==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
-      array-union: 3.0.1
       dir-glob: 3.0.1
       fast-glob: 3.2.11
       ignore: 5.2.0
@@ -194,11 +162,6 @@ packages:
 
   /graceful-fs/4.2.9:
     resolution: {integrity: sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==}
-    dev: true
-
-  /has-flag/4.0.0:
-    resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
-    engines: {node: '>=8'}
     dev: true
 
   /ignore/5.2.0:
@@ -252,32 +215,22 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /mime-db/1.51.0:
-    resolution: {integrity: sha512-5y8A56jg7XVQx2mbv1lu49NR4dokRnhZYTtL+KGfaa27uq4pSTXkwQkFJl4pkRMyNFz/EtYDSkiiEHx3F7UN6g==}
-    engines: {node: '>= 0.6'}
-    dev: true
-
-  /mime-types/2.1.34:
-    resolution: {integrity: sha512-6cP692WwGIs9XXdOO4++N+7qjqv0rqxxVvJ3VHPh/Sc9mVZcQP+ZGhkKiTvWMQRr2tbHkJP/Yn7Y0npb3ZBs4A==}
-    engines: {node: '>= 0.6'}
-    dependencies:
-      mime-db: 1.51.0
-    dev: true
-
   /minimist/1.2.5:
     resolution: {integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==}
     dev: true
 
-  /node-fetch/2.6.7:
-    resolution: {integrity: sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==}
-    engines: {node: 4.x || >=6.0.0}
-    peerDependencies:
-      encoding: ^0.1.0
-    peerDependenciesMeta:
-      encoding:
-        optional: true
+  /node-domexception/1.0.0:
+    resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
+    engines: {node: '>=10.5.0'}
+    dev: true
+
+  /node-fetch/3.2.0:
+    resolution: {integrity: sha512-8xeimMwMItMw8hRrOl3C9/xzU49HV/yE6ORew/l+dxWimO5A4Ra8ld2rerlJvc/O7et5Z1zrWsPX43v1QBjCxw==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
-      whatwg-url: 5.0.0
+      data-uri-to-buffer: 4.0.0
+      fetch-blob: 3.1.4
+      formdata-polyfill: 4.0.10
     dev: true
 
   /path-type/4.0.0:
@@ -336,13 +289,6 @@ packages:
       duplexer: 0.1.2
     dev: true
 
-  /supports-color/7.2.0:
-    resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
-    engines: {node: '>=8'}
-    dependencies:
-      has-flag: 4.0.0
-    dev: true
-
   /through/2.3.8:
     resolution: {integrity: sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=}
     dev: true
@@ -354,24 +300,14 @@ packages:
       is-number: 7.0.0
     dev: true
 
-  /tr46/0.0.3:
-    resolution: {integrity: sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=}
-    dev: true
-
   /universalify/2.0.0:
     resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /webidl-conversions/3.0.1:
-    resolution: {integrity: sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=}
-    dev: true
-
-  /whatwg-url/5.0.0:
-    resolution: {integrity: sha1-lmRU6HZUYuN2RNNib2dCzotwll0=}
-    dependencies:
-      tr46: 0.0.3
-      webidl-conversions: 3.0.1
+  /web-streams-polyfill/3.2.0:
+    resolution: {integrity: sha512-EqPmREeOzttaLRm5HS7io98goBgZ7IVz79aDvqjD0kYXLtFZTc0T/U6wHTPKyIjb+MdN7DFIIX6hgdBEpWmfPA==}
+    engines: {node: '>= 8'}
     dev: true
 
   /which/2.0.2:
@@ -382,22 +318,26 @@ packages:
       isexe: 2.0.0
     dev: true
 
-  /zx/4.3.0:
-    resolution: {integrity: sha512-KuEjpu5QFIMx0wWfzknDRhY98s7a3tWNRmYt19XNmB7AfOmz5zISA4+3Q8vlJc2qguxMn89uSxhPDCldPa3YLA==}
-    engines: {node: '>= 14.13.1'}
+  /yaml/1.10.2:
+    resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
+    engines: {node: '>= 6'}
+    dev: true
+
+  /zx/5.0.0:
+    resolution: {integrity: sha512-Kjf4tb11c4x+6d0WqU0+7YmAe0fJK7rABX/sBJNsQbPK8PUZttyIhXEiId4ZlWdyrPf/8Lfgi6R4tuiiUab9OQ==}
+    engines: {node: '>= 16.0.0'}
     hasBin: true
     dependencies:
       '@types/fs-extra': 9.0.13
       '@types/minimist': 1.2.2
-      '@types/node': 16.11.20
-      '@types/node-fetch': 2.5.12
-      chalk: 4.1.2
+      '@types/node': 17.0.16
+      '@types/node-fetch': 3.0.3
+      chalk: 5.0.0
       fs-extra: 10.0.0
-      globby: 12.2.0
+      globby: 13.1.1
       minimist: 1.2.5
-      node-fetch: 2.6.7
+      node-fetch: 3.2.0
       ps-tree: 1.2.0
       which: 2.0.2
-    transitivePeerDependencies:
-      - encoding
+      yaml: 1.10.2
     dev: true
