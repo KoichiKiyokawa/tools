@@ -5,7 +5,7 @@
 ### 自分が外部のリポジトリに対して作った PR 一覧を取得
 
 ```sh
-pnpm zx get-my-external-pr-list/index.mjs
+pnpm esmo get-my-external-pr-list/index.mjs
 ```
 
 ## ソルバー系
@@ -13,5 +13,5 @@ pnpm zx get-my-external-pr-list/index.mjs
 ### WORDLE ソルバー
 
 ```sh
-pnpm zx wordle/index.ts
+pnpm esmo wordle/index.ts
 ```
