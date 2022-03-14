@@ -7,7 +7,7 @@
   "license": "MIT",
   "devDependencies": {
     "esno": "0.14.1",
-    "zx": "5.2.0"
+    "zx": "5.3.0"
   },
   "packageManager": "pnpm@6.32.3"
 }
