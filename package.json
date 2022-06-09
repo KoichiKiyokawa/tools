@@ -6,7 +6,7 @@
   "author": "K.Kiyokawa",
   "license": "MIT",
   "devDependencies": {
-    "esno": "0.14.1",
+    "esno": "0.16.3",
     "zx": "6.2.4"
   },
   "packageManager": "pnpm@7.1.8"
