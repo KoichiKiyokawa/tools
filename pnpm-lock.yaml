@@ -2,11 +2,11 @@ lockfileVersion: 5.4
 
 specifiers:
   esno: 0.14.1
-  zx: 6.2.2
+  zx: 6.2.4
 
 devDependencies:
   esno: 0.14.1
-  zx: 6.2.2
+  zx: 6.2.4
 
 packages:
 
@@ -606,8 +606,8 @@ packages:
     engines: {node: '>= 14'}
     dev: true
 
-  /zx/6.2.2:
-    resolution: {integrity: sha512-u1hcv130nrRPX0Zr6TIr8W+8tT0i2yjWP8Pp9m/byZR6z0QcyxO7ik/o0qSI01c5LuFKQdfBIlPvtu8F8FrJLQ==}
+  /zx/6.2.4:
+    resolution: {integrity: sha512-wBDObcY5tKDOIOuGrg3XwrhCa6V6eeZLQDVbbpgN9pdhiyOJA/So9R9i5vKN7cGGWkcKKHy29i8kJtx02j+kSg==}
     engines: {node: '>= 16.0.0'}
     hasBin: true
     dependencies:
