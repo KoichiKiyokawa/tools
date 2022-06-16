@@ -5,8 +5,10 @@
   "main": "index.js",
   "author": "K.Kiyokawa",
   "license": "MIT",
+  "type": "module",
   "devDependencies": {
-    "esno": "0.16.3",
+    "tsx": "3.4.3",
+    "typescript": "4.7.3",
     "zx": "7.0.0"
   },
   "packageManager": "pnpm@7.2.1",

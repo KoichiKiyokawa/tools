@@ -1,20 +1,22 @@
 lockfileVersion: 5.4
 
 specifiers:
-  esno: 0.16.3
+  tsx: 3.4.3
+  typescript: 4.7.3
   zx: 7.0.0
 
 devDependencies:
-  esno: 0.16.3
+  tsx: 3.4.3
+  typescript: 4.7.3
   zx: 7.0.0
 
 packages:
 
-  /@esbuild-kit/cjs-loader/2.0.1:
-    resolution: {integrity: sha512-KmE8XouKm6m05jPIsf5CTIZZ4171GHd+PUts1mtti2tzoiD228qCRjpkCwg540c3fMUweKupO+PIpkJ9+Z7vPg==}
+  /@esbuild-kit/cjs-loader/2.1.0:
+    resolution: {integrity: sha512-KyX25VcC2564K5FnEhNDdzonC87VeSZoLz3h6R8x3d1myhxqGdoQkTQba3VCcuAkgdkn69d3Zhvj3xtGWldbEQ==}
     dependencies:
       '@esbuild-kit/core-utils': 1.3.1
-      get-tsconfig: 3.1.0
+      get-tsconfig: 4.0.2
     dev: true
 
   /@esbuild-kit/core-utils/1.3.1:
@@ -24,11 +26,11 @@ packages:
       source-map-support: 0.5.21
     dev: true
 
-  /@esbuild-kit/esm-loader/2.1.5:
-    resolution: {integrity: sha512-G0HZSh53dXOb42xR14zEASXtVWFNX2itREVPnh6BWU2PcApbSzFEIUpknotpybuu6QupuW9sS9hVVpJjuyZlSw==}
+  /@esbuild-kit/esm-loader/2.2.0:
+    resolution: {integrity: sha512-DA9v3nkmvUIledvp4Uuf0bq8rWsGB611PwKx8FPTQkWRJe4GrqcoqemiSIXFzteQJIqaDveez9/jJQLZME/5rg==}
     dependencies:
       '@esbuild-kit/core-utils': 1.3.1
-      get-tsconfig: 3.1.0
+      get-tsconfig: 4.0.2
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
@@ -314,13 +316,6 @@ packages:
       esbuild-windows-arm64: 0.14.38
     dev: true
 
-  /esno/0.16.3:
-    resolution: {integrity: sha512-6slSBEV1lMKcX13DBifvnDFpNno5WXhw4j/ff7RI0y51BZiDqEe5dNhhjhIQ3iCOQuzsm2MbVzmwqbN78BBhPg==}
-    hasBin: true
-    dependencies:
-      tsx: 3.4.2
-    dev: true
-
   /event-stream/3.3.4:
     resolution: {integrity: sha512-QHpkERcGsR0T7Qm3HNJSyXKEEj8AHNxkY3PK8TS2KJvQ7NiSHe3DDpwVKKtoYprL/AreyzFBeIkBIWChAqn60g==}
     dependencies:
@@ -393,8 +388,8 @@ packages:
     dev: true
     optional: true
 
-  /get-tsconfig/3.1.0:
-    resolution: {integrity: sha512-/8GSkE76aYtvKYX+uNShbgxI0tRbksEbbjgPOpk0Ca8QqkVZDxTmh6OCQXZaqqOSdfXkEHkvLQ7iPvFd2fnwVQ==}
+  /get-tsconfig/4.0.2:
+    resolution: {integrity: sha512-mId66O9RChjqWtUrq793OhYTJGUM1InYWw9wLQ4APAazEbN/BAAAcR+/X7dPBNy6om1vdGFTP5RGHste86ZOqQ==}
     dev: true
 
   /glob-parent/5.1.2:
@@ -567,15 +562,21 @@ packages:
       is-number: 7.0.0
     dev: true
 
-  /tsx/3.4.2:
-    resolution: {integrity: sha512-Rd1gm2noOUiVynF+VFxo4bVBNbzS6haWKWtlQ0bEfCLLEqm+GG3R98D3Rqk6foQ3NnJk6JAWOx1ragwcAPj4Lg==}
+  /tsx/3.4.3:
+    resolution: {integrity: sha512-2joLNBKxg6Jn+qEMlzMrS2K6uxBG2faQNX7J/w8cO56ysCxJPbfeyWX5Qxbv0l8GeCkkc0Q0/wlH9eEI5LkZeQ==}
     hasBin: true
     dependencies:
-      '@esbuild-kit/cjs-loader': 2.0.1
+      '@esbuild-kit/cjs-loader': 2.1.0
       '@esbuild-kit/core-utils': 1.3.1
-      '@esbuild-kit/esm-loader': 2.1.5
+      '@esbuild-kit/esm-loader': 2.2.0
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /typescript/4.7.3:
+    resolution: {integrity: sha512-WOkT3XYvrpXx4vMMqlD+8R8R37fZkjyLGlxavMc4iB8lrl8L0DeTcHbYgw/v0N/z9wAFsgBhcsF0ruoySS22mA==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
     dev: true
 
   /universalify/2.0.0:

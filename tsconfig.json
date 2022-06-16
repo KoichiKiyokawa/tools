@@ -4,6 +4,7 @@
     "module": "ESNext",
     "target": "ES2017",
     "strict": true,
-    "checkJs": true
+    "checkJs": true,
+    "moduleResolution": "node"
   }
 }
