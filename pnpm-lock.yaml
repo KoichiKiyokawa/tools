@@ -3,12 +3,12 @@ lockfileVersion: 5.4
 specifiers:
   tsx: 3.7.0
   typescript: 4.7.4
-  zx: 7.0.6
+  zx: 7.0.7
 
 devDependencies:
   tsx: 3.7.0
   typescript: 4.7.4
-  zx: 7.0.6
+  zx: 7.0.7
 
 packages:
 
@@ -602,8 +602,8 @@ packages:
     engines: {node: '>= 14'}
     dev: true
 
-  /zx/7.0.6:
-    resolution: {integrity: sha512-zTEUyKHamrr7KAWAunDE9Zo45/XHr7BOK9Y2aDWjOPowjouJlPaNZk4zLi/DFIQcW1vEhAiWvhmhLxlPsq3ohQ==}
+  /zx/7.0.7:
+    resolution: {integrity: sha512-cWF5cWqqrTVxgEPmQ8w/LvUXOK3rJTdgC+Tt1nz113+YncNIO0X6UXgCY72UfE8Az/lwOubbEJARXpQ+7RiM9g==}
     engines: {node: '>= 16.0.0'}
     hasBin: true
     dependencies:
