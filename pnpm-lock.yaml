@@ -1,12 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
-  tsx: 3.7.0
+  tsx: 3.7.1
   typescript: 4.7.4
   zx: 7.0.6
 
 devDependencies:
-  tsx: 3.7.0
+  tsx: 3.7.1
   typescript: 4.7.4
   zx: 7.0.6
 
@@ -562,8 +562,8 @@ packages:
       is-number: 7.0.0
     dev: true
 
-  /tsx/3.7.0:
-    resolution: {integrity: sha512-cYPixpDs2AeCjhTspIeCjgiRzXTnIeaYrQT9jkvqlenxRYZpT7cLSRR0PcWUqy8VESDjkTI0/HkYW/qWC4Sj1A==}
+  /tsx/3.7.1:
+    resolution: {integrity: sha512-dwl1GBdkwVQ9zRxTmETGi+ck8pewNm2QXh+HK6jHxdHmeCjfCL+Db3b4VX/dOMDSS2hle1j5LzQoo8OpVXu6XQ==}
     hasBin: true
     dependencies:
       '@esbuild-kit/cjs-loader': 2.3.0
