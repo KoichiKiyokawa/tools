@@ -15,7 +15,7 @@ const baseFirebaseJson = {
       .map((htmlFilePath) => {
         const destination = "/" + htmlFilePath;
         const source = destination
-          .replace(/\[.+\](\.html)?/g, "*") // e.g. /rooms/[id].html -> /rooms/*, /rooms/[id]/question.html -> /rooms/*/question.html
+          .replace(/\[.+?\](\.html)?/g, "*") // e.g. /rooms/[id].html -> /rooms/*, /rooms/[id]/question.html -> /rooms/*/question.html
           .replace("index.html", "") // e.g. /rooms/index.html -> /rooms
           .replace(".html", "") // e.g. /rooms/*/question.html -> /rooms/*/question
           .replace(/(.+)\/$/, "$1"); // e.g. 末尾のスラッシュを削除 /rooms/ -> /rooms
