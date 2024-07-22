@@ -9,8 +9,8 @@ devDependencies:
     specifier: 3.8.0
     version: 3.8.0
   typescript:
-    specifier: 4.7.4
-    version: 4.7.4
+    specifier: 4.9.5
+    version: 4.9.5
   zx:
     specifier: 7.0.8
     version: 7.0.8
@@ -578,8 +578,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /typescript@4.7.4:
-    resolution: {integrity: sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==}
+  /typescript@4.9.5:
+    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
