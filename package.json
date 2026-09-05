@@ -11,7 +11,7 @@
     "typescript": "6.0.3",
     "zx": "7.0.8"
   },
-  "packageManager": "pnpm@11.21.0",
+  "packageManager": "pnpm@12.1.0",
   "prettier": {
     "printWidth": 120
   }
